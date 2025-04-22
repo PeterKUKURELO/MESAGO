@@ -1,0 +1,36 @@
+<div class="login-container">
+  <div class="login-card">
+    <div class="logo">
+      <img src="assets/mesago-logo.png" alt="MesaGo!" class="logo-img">
+    </div>
+
+    <form [formGroup]="loginForm" (ngSubmit)="onSubmit()" class="login-form">
+      <div class="form-group">
+        <label for="usuario">Usuario:</label>
+        <input
+          type="text"
+          id="usuario"
+          formControlName="usuario"
+          class="form-control"
+          [ngClass]="{'invalid': loginForm.get('usuario')?.invalid && loginForm.get('usuario')?.touched}">
+      </div>
+
+      <div class="form-group">
+        <label for="contrasena">Contraseña:</label>
+        <input
+          type="password"
+          id="contrasena"
+          formControlName="contrasena"
+          class="form-control"
+          [ngClass]="{'invalid': loginForm.get('contrasena')?.invalid && loginForm.get('contrasena')?.touched}">
+      </div>
+
+      <button
+        type="submit"
+        class="login-button"
+        [disabled]="loginForm.invalid">
+        INGRESAR
+      </button>
+    </form>
+  </div>
+</div>
