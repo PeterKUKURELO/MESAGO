@@ -3,26 +3,26 @@
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background: linear-gradient(135deg, #ffcc80 0%, #e1f5fe 100%);
+  background: linear-gradient(120deg, #ffcc80 0%, #e1f5fe 100%);
   padding: 20px;
 }
 
 .login-card {
-  background-color: white;
-  border-radius: 10px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+
   padding: 30px;
   width: 100%;
-  max-width: 400px;
+  max-width: 500px;
   text-align: center;
+  font-weight: 800;
 }
 
 .logo {
   margin-bottom: 30px;
+  align-items: center;
 }
 
 .logo-img {
-  max-width: 200px;
+  max-width: 400px;
   height: auto;
 }
 
@@ -40,13 +40,13 @@
   margin-bottom: 8px;
   font-size: 16px;
   color: #1565C0;
-  font-weight: 500;
+  font-weight: 800;
 }
 
 .form-control {
   width: 100%;
   padding: 12px;
-  border: 1px solid #ddd;
+  border: 2.3px solid #2D60FF;
   border-radius: 6px;
   font-size: 16px;
   transition: border-color 0.3s;
@@ -55,7 +55,7 @@
 
 .form-control:focus {
   outline: none;
-  border-color: #1976D2;
+  border: 1.8px solid #1976D2;
 }
 
 .form-control.invalid {
